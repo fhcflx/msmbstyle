@@ -3,7 +3,7 @@
 #' @export
 msmb_html_book = function(...) {
     html_chapters(..., 
-                  base_format = msmbstyle::msmb_html, 
+                  base_format = pinkstyle::msmb_html, 
                   page_builder = msmb_build_chapter)
 }
 
