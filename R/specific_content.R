@@ -150,7 +150,7 @@ solution_end <- function() {
 #'   \code{label = 'ques:one'} use \code{\@ref(ques:one)} in the main text.
 #' 
 #' @examples 
-#' msmbstyle::question(text = "This is a labelled question",
+#' pinkstyle::question(text = "This is a labelled question",
 #'                     label = "ques:two", 
 #'                     header = "Answer")
 #' 
