@@ -73,16 +73,16 @@ its only here while we sort out the book*/
 }
 
 h1 {
-  color: #1881c2;
+  color: #ff26e6;
   width: 55%;
-  border-bottom-color: #1881c2;
+  border-bottom-color: #ff26e6;
   border-bottom-style: solid;
   padding-bottom: 0.5rem;
 }
 
 h2 {
-  color: #1881c2;
-  border-bottom-color: #1881c2;
+  color: #ff26e6;
+  border-bottom-color: #ff26e6;
   border-bottom-style: solid;
   width: 55%;
   padding-bottom: 0.5rem;
@@ -91,7 +91,7 @@ h2 {
 }
 
 h3 {
-  color: #1881c2;
+  color: #ff26e6;
   font-size: 1.5rem;
 }
 
@@ -111,7 +111,7 @@ ul.navbar {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1881c2;
+    background-color: #ff26e6;
     top: 0;
 }
 
@@ -220,7 +220,7 @@ when window exceeds 1615px */
 } 
 
 #active-page {
-    background-color: #1881c2;
+    background-color: #ff26e6;
     color: white;
 }
 
