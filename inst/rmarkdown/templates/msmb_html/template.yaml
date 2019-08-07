@@ -1,5 +1,4 @@
-name: MSMB Style Book (HTML)
+name: Pink Style Book (HTML)
 description: >
-  Template for creating an HTML book in the style of 
-  Modern Statistics for Modern Biology - Holmes & Huber, 2018
+  Template for creating an HTML book
 create_dir: false
