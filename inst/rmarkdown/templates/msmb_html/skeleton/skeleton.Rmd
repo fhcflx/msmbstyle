@@ -1,10 +1,10 @@
 ---
-title: "MSMB Style"
+title: "Pink Style"
 subtitle: "R bookdown example"
-author: "Mike Smith"
+author: "Francisco Felix"
 date: "`r Sys.Date()`"
 output:
-  msmbstyle::msmb_html_book:
+  pinkstyle::msmb_html_book:
     highlight: tango
     toc: TRUE
     toc_depth: 1
@@ -16,18 +16,18 @@ link-citations: yes
 ---
 
 ```{r setup, include=FALSE}
-library(msmbstyle)
+library(pinkstyle)
 # invalidate cache when the tufte version changes
-knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('msmbstyle'))
+knitr::opts_chunk$set(tidy = FALSE, cache.extra = packageVersion('pinkstyle'))
 options(htmltools.dir.version = FALSE)
 ```
 
 # Introduction
 
-Styling based heavily on the [**tufte** package](https://github.com/rstudio/tufte). For HTML output, use `msmbstyle::msmb_html_book` in the yaml header.
+Styling based heavily on the [**tufte** package](https://github.com/rstudio/tufte). For HTML output, use `pinkstyle::msmb_html_book` in the yaml header.
 
 
 ```{r bib, include=FALSE}
 # create a bib file for the R packages used in this document
-knitr::write_bib(c('base', 'rmarkdown', 'bookdown', 'msmbstyle'), file = 'skeleton.bib')
+knitr::write_bib(c('base', 'rmarkdown', 'bookdown', 'pinkstyle'), file = 'skeleton.bib')
 ```
