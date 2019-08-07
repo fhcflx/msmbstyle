@@ -200,7 +200,7 @@ tufte_html_dependency = function(features, variant) {
 msmb_html_dependency = function() {
     list(htmlDependency(
         'msmb-css', version = '0',
-        src = template_resources('msmb_html', package = 'msmbstyle'), stylesheet = 'msmb.css'
+        src = template_resources('msmb_html', package = 'pinkstyle'), stylesheet = 'msmb.css'
     ))
 }
 
