@@ -269,7 +269,7 @@ msmb_html_dependency = function() {
                     paste0('<ul class="navbar">\n',
                            '<li class="msmb">', header, '</li>\n',
                            '<li class="dropdown" style="float:right">\n',
-                           '<a href="javascript:void(0)" class="dropbtn">&#x25BE; Chapters</a>\n',
+                           '<a href="javascript:void(0)" class="dropbtn">&#x25BE; Capítulos</a>\n',
                            '<div class="dropdown-content">')) %>%
         str_replace_all('<li>', '') %>% 
         str_replace_all('</li>', '') %>%
