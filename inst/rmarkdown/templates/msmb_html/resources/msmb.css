@@ -33,7 +33,7 @@ body {
   color: red;
 }
 
-/* we can remove this eventually 
+/* we can remove this eventually
 its only here while we sort out the book*/
 .solution-body {
     font-weight: normal;
@@ -69,7 +69,7 @@ its only here while we sort out the book*/
 }
 
 .math {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
 }
 
 h1 {
@@ -175,14 +175,14 @@ blockquote .marginnote, blockquote .sidenote {
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #ffebfb;
     width: 27.5%;
     z-index: 1;
     margin-right: 140px;
     /*modify margin as window resized */
-    right: calc((87.5% - 1400px)/2); 
+    right: calc((87.5% - 1400px)/2);
     max-width: 440px;
     font-size: 1.2rem;
 }
@@ -217,7 +217,7 @@ when window exceeds 1615px */
     background-position-y: 0;
     text-shadow: none;
     background-size: 0;
-} 
+}
 
 #active-page {
     background-color: #ff26e6;
@@ -264,9 +264,9 @@ div.sourceCode {
     width: 56%;
 }
 
-/* 
-changes to bookdown HTML render this 
-obsolete for now 
+/*
+changes to bookdown HTML render this
+obsolete for now
 pre.sourceCode {
     width: auto;
     padding: 2px;
@@ -289,7 +289,7 @@ pre {
     padding-right: 1%;
     background-color: #F7F7F7;
     margin-bottom: 4px;
-    margin-top: 4px; 
+    margin-top: 4px;
     overflow-x: scroll;
 }
 
