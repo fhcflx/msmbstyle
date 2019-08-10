@@ -1,7 +1,7 @@
 #' @rdname msmb_html
 #' @importFrom bookdown html_chapters
 #' @export
-msmb_html_book = function(...) {
+pink_html_book = function(...) {
     html_chapters(...,
                   base_format = pinkstyle::msmb_html,
                   page_builder = msmb_build_chapter)
@@ -15,7 +15,7 @@ msmb_html_book = function(...) {
 #' @details \code{msmb_html()} provides the HTML format used in
 #' Modern Statistics for Modern Biology:
 #'   \url{http://www-huber.embl.de/msmb/}.
-#' @details \code{msmb_html_book()} is used to create output split
+#' @details \code{pink_html_book()} is used to create output split
 #' into individual chapters for a book.  If you wish to create a complete
 #' book this should be used in the output section of your YAML header
 #' in the R Markdown document.

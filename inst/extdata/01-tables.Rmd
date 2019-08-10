@@ -1,7 +1,7 @@
 ---
-title: "MSMB HTML Book Style"
+title: "PINK HTML Book Style"
 subtitle: "Example"
-author: "Mike Smith"
+author: "Francisco Felix"
 date: "`r Sys.Date()`"
 knit: "bookdown::preview_chapter"
 site: "bookdown::bookdown_site"
@@ -9,13 +9,13 @@ link-citations: yes
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
 output:
-  msmbstyle::msmb_html_book:
+  pinkstyle::pink_html_book:
     highlight: tango
     toc: TRUE
     toc_depth: 1
     split_by: chapter
     margin_references: FALSE
-bibliography: msmbstyle-ex.bib
+bibliography: pinkstyle-ex.bib
 ---
 
 # Tables
@@ -45,7 +45,7 @@ knitr::kable(d1, caption = 'Example of table appearing in the main body of the t
 You can also include tables in the margin column as in Table \@ref(tab:margin-table), with the caption above.
 
 ```{r, margin-table, echo = TRUE}
-HIV <- data.frame(Patient = c('AHX112', 'AHX717', 'AHX543'), 
+HIV <- data.frame(Patient = c('AHX112', 'AHX717', 'AHX543'),
                            Mut1 = c(0, 1, 1),
                            Mut2 = c(0, 0, 0),
                            Mut3 = c(0, 1, 0),
@@ -54,4 +54,4 @@ knitr::kable(HIV, format = 'html', table.attr = 'class=\"margintab marginnote\"'
         caption = 'An example of a table in the margin.')
 ```
 
-To achieve this we use the `kable()` function to produce the an HTML table with the attributes `margintab` & `marginnote`.  **msmbstyle** then provides the CSS required to place this table in the margin.
+To achieve this we use the `kable()` function to produce the an HTML table with the attributes `margintab` & `marginnote`.  **pinkstyle** then provides the CSS required to place this table in the margin.

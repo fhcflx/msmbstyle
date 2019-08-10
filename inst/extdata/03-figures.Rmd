@@ -1,7 +1,7 @@
 ---
-title: "MSMB HTML Book Style"
+title: "PINK HTML Book Style"
 subtitle: "Example"
-author: "Mike Smith"
+author: "Francisco Felix"
 date: "`r Sys.Date()`"
 knit: "bookdown::preview_chapter"
 site: "bookdown::bookdown_site"
@@ -9,20 +9,20 @@ link-citations: yes
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
 output:
-  msmbstyle::msmb_html_book:
+  pinkstyle::pink_html_book:
     highlight: tango
     toc: TRUE
     toc_depth: 1
     split_by: chapter
     margin_references: FALSE
-bibliography: msmbstyle-ex.bib
+bibliography: pinkstyle-ex.bib
 ---
 
 # Figures & Margin Content
 
-When using **msmbstyle** you can make use of all the plot configuration settings that are provided by [**bookdown**](https://www.bookdown.org) and [**tufte**](https://github.com/rstudio/tufte), including references, figure captions, and margin figures.
+When using **pinkstyle** you can make use of all the plot configuration settings that are provided by [**bookdown**](https://www.bookdown.org) and [**tufte**](https://github.com/rstudio/tufte), including references, figure captions, and margin figures.
 
-The examples shown below are taken directly from the **tufte** vignette (https://rstudio.github.io/tufte/) to demonstrate how they are styled by **msmbstyle**.
+The examples shown below are taken directly from the **tufte** vignette (https://rstudio.github.io/tufte/) to demonstrate how they are styled by **pinkstyle**.
 
 ## Margin Figures
 
@@ -70,4 +70,3 @@ Besides margin and full width figures, you can of course also include figures co
 ```{r fig-main, fig.cap = "A figure in the main column.", cache=TRUE}
 ggplot(diamonds, aes(cut, price)) + geom_boxplot()
 ```
-

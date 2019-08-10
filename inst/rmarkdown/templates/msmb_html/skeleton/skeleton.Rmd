@@ -4,7 +4,7 @@ subtitle: "R bookdown example"
 author: "Francisco Felix"
 date: "`r Sys.Date()`"
 output:
-  pinkstyle::msmb_html_book:
+  pinkstyle::pink_html_book:
     highlight: tango
     toc: TRUE
     toc_depth: 1
@@ -24,7 +24,7 @@ options(htmltools.dir.version = FALSE)
 
 # Introduction
 
-Styling based heavily on the [**tufte** package](https://github.com/rstudio/tufte). For HTML output, use `pinkstyle::msmb_html_book` in the yaml header.
+Styling based heavily on the [**tufte** package](https://github.com/rstudio/tufte). For HTML output, use `pinkstyle::pink_html_book` in the yaml header.
 
 
 ```{r bib, include=FALSE}
