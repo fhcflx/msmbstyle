@@ -206,7 +206,7 @@ when window exceeds 1615px */
 }
 
 .dropdown-content a:hover {
-    background-color: rgb(24,129,194,0.4);
+    background-color: rgb(194, 24, 183,0.4);
 }
 
 .dropdown:hover .dropdown-content {
