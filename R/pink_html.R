@@ -1,10 +1,10 @@
-#' @rdname msmb_html
+#' @rdname pink_html
 #' @importFrom bookdown html_chapters
 #' @export
 pink_html_book = function(...) {
     html_chapters(...,
-                  base_format = pinkstyle::msmb_html,
-                  page_builder = msmb_build_chapter)
+                  base_format = pinkstyle::pink_html,
+                  page_builder = pink_build_chapter)
 }
 
 #' Modern Statstics for Modern Biology HTML format
@@ -12,7 +12,7 @@ pink_html_book = function(...) {
 #' Template for creating webpages in the style of Modern Statistics for
 #' Modern Biology \url{http://www-huber.embl.de/msmb/}.
 #'
-#' @details \code{msmb_html()} provides the HTML format used in
+#' @details \code{pink_html()} provides the HTML format used in
 #' Modern Statistics for Modern Biology:
 #'   \url{http://www-huber.embl.de/msmb/}.
 #' @details \code{pink_html_book()} is used to create output split
@@ -22,10 +22,10 @@ pink_html_book = function(...) {
 #'
 #' @param margin_references \code{logical}.  Determines whether to place
 #'   citations in the margin, or collate them at the end of the document.
-#' @rdname msmb_html
+#' @rdname pink_html
 #' @importFrom bookdown resolve_refs_html
 #' @export
-msmb_html = function(
+pink_html = function(
   ...,
   margin_references = TRUE
 ) {
@@ -38,7 +38,7 @@ msmb_html = function(
       ..., extra_dependencies = c(
         extra_dependencies,
         tufte_html_dependency(tufte_features, tufte_variant),
-        msmb_html_dependency()
+        pink_html_dependency()
       )
     )
   }
@@ -197,10 +197,10 @@ tufte_html_dependency = function(features, variant) {
 }
 
 #' @importFrom htmltools htmlDependency
-msmb_html_dependency = function() {
+pink_html_dependency = function() {
     list(htmlDependency(
-        'msmb-css', version = '0',
-        src = template_resources('msmb_html', package = 'pinkstyle'), stylesheet = 'msmb.css'
+        'pink-css', version = '0',
+        src = template_resources('pink_html', package = 'pinkstyle'), stylesheet = 'pink.css'
     ))
 }
 
@@ -267,7 +267,7 @@ msmb_html_dependency = function() {
     x[toc_start:toc_end] <- x[toc_start:toc_end] %>%
         str_replace('<ul>',
                     paste0('<ul class="navbar">\n',
-                           '<li class="msmb">', header, '</li>\n',
+                           '<li class="pink">', header, '</li>\n',
                            '<li class="dropdown" style="float:right">\n',
                            '<a href="javascript:void(0)" class="dropbtn">&#x25BE; Capítulos</a>\n',
                            '<div class="dropdown-content">')) %>%
@@ -279,13 +279,13 @@ msmb_html_dependency = function() {
 }
 
 
-msmb_build_chapter = function(
+pink_build_chapter = function(
     head, toc, chapter, link_prev, link_next, rmd_cur, html_cur, foot
 ) {
 
     ## insert script for solution toggle
-    ## we put it after the msmb.css as this should always be present
-    last_script <- max(str_which(head, "msmb.css\""))
+    ## we put it after the pink.css as this should always be present
+    last_script <- max(str_which(head, "pink.css\""))
     head[last_script] <- paste(head[last_script], toggle_script(), sep = "\n")
 
     # add a has-sub class to the <li> items that has sub lists
